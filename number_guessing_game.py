@@ -7,7 +7,11 @@ attempts = 1
 print(f"You have {max_attempts} attempts to guess the number.")
 guessed_number = int(input("enter guessed number"))
 while guessed_number != secret_number and attempts < max_attempts:
-    if guessed_number > secret_number:
+    if guessed_number < 1 or guessed_number > 10:
+     print("Invalid guess! Enter a number between 1 and 10.")
+     guessed_number = int(input("Enter another guess: "))
+     continue
+    elif guessed_number > secret_number :
      print("Too high! Try a lower number.")
     elif guessed_number < secret_number:
      print("Too low! Try a higher number.")
