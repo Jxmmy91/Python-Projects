@@ -29,3 +29,28 @@ def get_student_info():
 student_name, student_score = get_student_info()
 print(student_name)
 print(student_score)
+
+#list
+fruits = ["apple", "banana", "orange", "grape"]
+fruits[3] = "pineapple"
+fruits.append("mango")
+fruits.remove("banana")
+print(fruits)
+
+scores = [45, 80, 32, 90, 65]
+for score in scores:
+    if score >= 70:
+        print(score)
+
+scores = [45, 80, 32, 90, 65]
+count = 0
+for score in scores:
+    if score < 50:
+        count += 1
+print(count)
+
+numbers = [5, 10, 15, 20]
+total = 0
+for number in numbers:
+    total += number
+print(total)
